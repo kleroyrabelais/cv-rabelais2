@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8">
+<commercial>
+    <client> id 15
+        <nom> Renard </nom>
+        <prenom> Nicolas </prenom>
+        <mail> nrenard@gmail.com </mail>
+        <mobile> 0699305567 </mobile>
+        <prospect> faux </prospect>
+        <#idcommercial> id 3 </#idcommercial>
+    </client>
+    <client> id 26
+        <nom> Grenapin </nom>
+        <prenom> Dorothee </prenom>
+        <mail> grenapin@ft-group.com </mail>
+        <mobile> 0299123455 </mobile>
+        <prospect> vrai </prospect>
+        <#idcommercial> id 3 </#idcommercial>
+    </client>
+        <commercial> id 3
+        <nom> Garrec </nom>
+        <prenom> Jean </prenom>
+    </commercial>
+    <demande> id 18
+        <destination> Mexique </destination>
+        <type> sejour </type>
+        <periode> fin mai 2010 </periode>
+        <duree> 7 nuits </duree>
+        <nbParticipants> 4 </nbParticipants>
+        <tarifMax> 890.00 </tarifMax>
+        <#idclient> 15 </#idclient>
+    </demande>
+    <proposition> id 18-1
+        <descriptif> Circuit Maya: Yucatan-Canun </descriptif>
+        <#idDemande> 18 </#idDemande>
+    </proposition>
+    <proposition> id 18-2
+        <descriptif> Route Turquoise: cascades,temples </descriptif>
+        <#idDemande> 18 </#idDemande>
+    </proposition>
+</commercial>
