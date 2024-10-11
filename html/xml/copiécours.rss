@@ -1,26 +1,39 @@
-<!ELEMENT rss (channel)>
-<!ATTLIST rss version CDATA #FIXED "2.0">
-<!-- A channel can apparently either have one or more items,
-     or just a title, link, and description of its own -->
-<!ELEMENT channel ((item+)|
-                   (title,link,description,(language|copyright|
-                    webMaster|pubDate|category|image)*))>
-<!ELEMENT item ((title|description)+,link?,
-                (author|category|comments|enclosure|guid|pubDate)*)>
-<!ELEMENT author (#PCDATA)>
-<!ELEMENT category (#PCDATA)>
-<!ATTLIST category domain CDATA #IMPLIED>
-<!ELEMENT comments (#PCDATA)>
-<!ELEMENT description (#PCDATA)>
-<!ELEMENT enclosure (#PCDATA)>
-<!ATTLIST enclosure url CDATA #REQUIRED
-                    length CDATA #REQUIRED
-                    type CDATA #REQUIRED>
-<!ELEMENT guid (#PCDATA)>
-<!ATTLIST guid isPermaLink (true|false) "true">
-<!ELEMENT image (url,title,link,(width|height|description)*)>
-<!ELEMENT language (#PCDATA)>
-<!ELEMENT link (#PCDATA)>
-<!ELEMENT pubDate (#PCDATA)>
-<!ELEMENT title (#PCDATA)>
-<!ELEMENT webMaster (#PCDATA)>
+<?xml version="1.0" encoding="utf-8" ?>
+
+<rss version="2.0">
+
+ 
+
+<channel>
+
+  <title>W3Schools Home Page</title>
+
+  <link>http://www.w3schools.com</link>
+
+  <description>Free web building tutorials</description>
+
+  <item>
+
+    <title>RSS Tutorial</title>
+
+    <link>http://www.w3schools.com/rss</link>
+
+    <description>New RSS tutorial on W3Schools</description>
+
+  </item>
+
+  <item>
+
+    <title>XML Tutorial</title>
+
+    <link>http://www.w3schools.com/XML</link>
+
+    <description>New XML tutorial on W3Schools</description>
+
+  </item>
+
+</channel>
+
+ 
+
+</rss>
